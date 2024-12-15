@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VananeBiznet</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/logo/logo1.png">
+</head>
+
+<body>
+
+    <!-- Header Design -->
+    <div class="header">
+        <a href="#" class="logo">
+            <h1 id="vanane" class="d-inline-block align-text-top mt-2">Vanane</h1>
+            <h1 id="biznet" class="d-inline-block align-text-top mt-2">Biznet</h1>
+        </a>
+
+        <div class="menu">
+            <i class="bi bi-menu-button-wide"></i>
+        </div>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <!-- Header Design -->
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Damsara</h1>
+            <div class="text-animate">
+                <h3>Frontend Developer</h3>
+            </div>
+            <p>after submitting it a request will be sent the owner saying that you choose this work and you account will
+                show the time left till the choose time is over.
+                then after finishing the work you can log in and submit your work.
+                then you till receive your payment within two days.
+            </p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Join Us</a>
+                <a href="#" class="btn">Login</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="home-imgHover"></div>
+    </section>
+    <!-- Hero Section -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Us</span></h2>
+        <div class="about-img">
+            <img src="images/logo/logo.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Frountend Developer!</h3>
+            <p>
+                staring from typing and translation categories,
+                if one chooses typing they have two options Sinhala,
+                English. if Sinhala is chosen they will show Sinhala work and choosing English will show you English work.
+                Then you can choose any work available from the shown work cards.
+                after choosing the card and selecting it next you can fill the form with email and time duration of the work.
+                after submitting it a request will be sent the owner saying that you choose.
+            </p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
