@@ -30,7 +30,7 @@
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#">About</a>
-            <a href="#">Skills</a>
+            <a href="#">Work</a>
             <a href="#">Contact</a>
         </nav>
     </div>
@@ -87,6 +87,101 @@
         </div>
     </section>
     <!-- About Section -->
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <h2 class="heading">Start <span>Working</span></h2>
+
+        <div class="work-row">
+            <div class="work-column">
+                <h3 class="title">Typing</h3>
+
+                <div class="work-box">
+                    <div class="work-content">
+                        <div class="content">
+                            <div class="work-qty"><i class="bi bi-keyboard"></i> Remaining Tasks - 10</div>
+                            <h3>Typing - Sinhala</h3>
+                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
+                                it mainly has two categories which are typing and translation.</p>
+                        </div>
+                    </div>
+
+                    <div class="work-content">
+                        <div class="content">
+                            <div class="work-qty"><i class="bi bi-keyboard"></i> Remaining Tasks - 10</div>
+                            <h3>Typing - English</h3>
+                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
+                                it mainly has two categories which are typing and translation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-column">
+                <h3 class="title">Translation</h3>
+
+                <div class="work-box">
+                    <div class="work-content">
+                        <div class="content">
+                            <div class="work-qty"><i class="bi bi-translate"></i> Remaining Tasks - 10</div>
+                            <h3>Translate - Sinhala To English</h3>
+                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
+                                it mainly has two categories which are typing and translation.</p>
+                        </div>
+                    </div>
+
+                    <div class="work-content">
+                        <div class="content">
+                            <div class="work-qty"><i class="bi bi-translate"></i> Remaining Tasks - 10</div>
+                            <h3>Translate - English To Sinhala</h3>
+                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
+                                it mainly has two categories which are typing and translation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section -->
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- Contact Section -->
 
 
     <script src="js/script.js"></script>

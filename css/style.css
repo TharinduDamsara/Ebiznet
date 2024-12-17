@@ -98,7 +98,7 @@ section {
     padding: 10rem 9% 5rem;
     display: flex;
     align-items: center;
-    background: url(../images/banner/home3.png) no-repeat;
+    background: url(../images/banner/home.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -257,9 +257,9 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     background: var(--second-bg-color);
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
 }
 
 .heading {
@@ -317,11 +317,208 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.btn-box.btns{
+.btn-box.btns {
     display: inline-block;
     width: 15rem;
 }
 
-.btn-box.btns a::before{
+.btn-box.btns a::before {
+    background: var(--second-bg-color);
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.work .work-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.work-row .work-column {
+    flex: 2 2 20rem;
+}
+
+.work-column .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.work-column .work-box {
+    border-left: 0.2rem solid var(--main-color);
+}
+
+.work-box .work-content {
+    position: relative;
+    border-radius: 10px;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.work-box .work-content:hover {
+    box-shadow: 10px 10px 55px var(--main-color);
+    transform: scale(1.05);
+}
+
+.work-box .work-content:active {
+    transform: scale(1);
+}
+
+.work-box .work-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -44px;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.work-content .content {
+    position: relative;
+    padding: 1rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.work-content .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.work-content .content:hover::before {
+    width: 100%;
+}
+
+.work-content .content .work-qty {
+    font-size: 18px;
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.work-content .content .work-qty i {
+    padding-right: 0.5rem;
+}
+
+.work-content .content h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.work-content .content p {
+    font-size: 15px;
+    padding-top: 0.5rem;
+}
+
+.contact {
+    background: var(--second-bg-color);
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact form {
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: 0.5rem 0;
+}
+
+.contact form .input-box .input-field:hover,
+.textarea-field:hover {
+    box-shadow: 10px 10px 55px var(--main-color);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 17px;
+    font-size: 16px;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: 10px;
+    border: 0.2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.contact form .input-box .input-field input:focus,
+.contact form .textarea-field textarea:focus {
+    outline: none;
+}
+
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+}
+
+.contact form .textarea-field {
+    position: relative;
+    margin: 0.8rem 0 2.7rem;
+    display: flex;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+
+.contact form .btn-box.btns .btn::before {
     background: var(--second-bg-color);
 }
