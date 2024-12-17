@@ -58,7 +58,7 @@
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-whatsapp"></i></a>
             <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
         </div>
         <div class="home-imgHover"></div>
     </section>
@@ -182,6 +182,47 @@
         </form>
     </section>
     <!-- Contact Section -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Footer Left Section -->
+            <div class="footer-left">
+                <h2>Vanane<span>Biznet</span></h2>
+                <p>
+                    Empowering businesses through innovative digital solutions.
+                    Explore, connect, and grow with us.
+                </p>
+            </div>
+
+            <!-- Footer Center Section -->
+            <div class="footer-center">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+                <p><i class="bi bi-telephone-fill"></i><a href="#"> +94 783 931 221</a></p>
+                <p><i class="bi bi-envelope-at-fill"></i><a href="mailto:support@vananebiznet.com"> support@vananebiznet.com</a></p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-icon">
+                    <a href="#"><i class="bi bi-arrow-up"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025 by MoonForge || All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer -->
 
 
     <script src="js/script.js"></script>
