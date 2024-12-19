@@ -26,5 +26,18 @@ window.onscroll = () => {
     var header = document.getElementById("header");
     if (header) {
         header.classList.toggle("sticky", top > 100);
+
+        // remove toggle (scroll)
+        menuicon.classList.remove("bi-x-lg");
+        navbar.classList.remove("active");
     }
+};
+
+// toggle icon navbar
+var menuicon = document.querySelector(".menu i");
+var navbar = document.querySelector(".navbar");
+
+menuicon.onclick = () => {
+    menuicon.classList.toggle("bi-x-lg");
+    navbar.classList.toggle("active");
 };

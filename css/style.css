@@ -25,6 +25,7 @@
 
 html {
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 7%;
+    padding: 2rem 9%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -46,13 +47,13 @@ body {
     transition: 0.3s ease;
 }
 
-.header.sticky{
+.header.sticky {
     background: var(--bg-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--text-color);
     font-weight: 700;
     text-decoration: none;
@@ -60,24 +61,24 @@ body {
 }
 
 #vanane {
-    font-size: 30px;
+    font-size: 3rem;
     font-family: "Quicksand";
     color: var(--main-color);
     font-weight: 700;
 }
 
 #biznet {
-    font-size: 30px;
+    font-size: 3rem;
     font-family: "Quicksand";
     color: var(--text-color);
     font-weight: 700;
 }
 
 .navbar a {
-    font-size: 17px;
+    font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
-    margin-left: 4rem;
+    margin-left: 7rem;
     text-decoration: none;
     transition: 0.3s ease;
 }
@@ -89,7 +90,7 @@ body {
 }
 
 .menu i {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: var(--text-color);
     cursor: pointer;
     display: none;
@@ -101,51 +102,50 @@ section {
 }
 
 .home {
-    min-height: 100vh;
-    padding: 10rem 9% 5rem;
     display: flex;
     align-items: center;
+    padding: 0 9%;
     background: url(../images/banner/bghome.PNG) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home-content {
-    max-width: 40rem;
+    max-width: 60rem;
     z-index: 1;
 }
 
 .home-content h1 {
     font-family: "poppins";
-    font-size: 60px;
+    font-size: 5.6rem;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.3;
 }
 
 .home-content .text-animate {
     position: relative;
-    width: 32.8rem;
+    width: 35rem;
 }
 
 .home-content .text-animate h3 {
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 3.5rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 1.3px var(--main-color);
+    -webkit-text-stroke: 1px var(--main-color);
 }
 
 .home-content p {
-    font-size: 17px;
-    margin: 20px 0 40px;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
 }
 
 .btn-box {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 25rem;
-    height: 4.5rem;
+    width: 34.5rem;
+    height: 5rem;
 }
 
 .btn-box .btn {
@@ -153,14 +153,14 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 11rem;
-    height: 80%;
+    width: 15rem;
+    height: 100%;
     background: var(--main-color);
-    border: .2rem solid var(--main-color);
-    border-radius: 10px;
-    font-size: 20px;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 1rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     color: var(--bg-color);
     z-index: 1;
     overflow: hidden;
@@ -202,7 +202,7 @@ section {
 
 .home-sci {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 4rem;
     width: 250px;
     display: flex;
     justify-content: space-between;
@@ -218,7 +218,7 @@ section {
     background: transparent;
     border: 0.2rem solid var(--text-color);
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--text-color);
     z-index: 1;
     overflow: hidden;
@@ -265,13 +265,13 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     background: var(--second-bg-color);
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
 .heading {
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: "poppins";
     margin-bottom: 3rem;
     text-align: center;
@@ -284,8 +284,8 @@ span {
 
 .about-img {
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -321,7 +321,7 @@ span {
 }
 
 .about-content p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
@@ -350,11 +350,11 @@ span {
 }
 
 .work-row .work-column {
-    flex: 2 2 20rem;
+    flex: 1 1 40rem;
 }
 
 .work-column .title {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     margin: 0 0 1.5rem 2rem;
 }
@@ -365,7 +365,7 @@ span {
 
 .work-box .work-content {
     position: relative;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin-left: 2rem;
     cursor: pointer;
     transition: 0.5s;
@@ -384,18 +384,18 @@ span {
     content: "";
     position: absolute;
     top: 0;
-    left: -44px;
-    width: 1.3rem;
-    height: 1.3rem;
+    left: -3.1rem;
+    width: 2rem;
+    height: 2rem;
     background: var(--main-color);
     border-radius: 50%;
 }
 
 .work-content .content {
     position: relative;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 0.2rem solid var(--main-color);
-    border-radius: 12px;
+    border-radius: 1rem;
     margin-bottom: 2rem;
     overflow: hidden;
 }
@@ -417,7 +417,7 @@ span {
 }
 
 .work-content .content .work-qty {
-    font-size: 18px;
+    font-size: 1.6rem;
     color: var(--main-color);
     padding-bottom: 0.5rem;
 }
@@ -427,12 +427,12 @@ span {
 }
 
 .work-content .content h3 {
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .work-content .content p {
-    font-size: 15px;
+    font-size: 1.5rem;
     padding-top: 0.5rem;
 }
 
@@ -443,7 +443,7 @@ span {
 }
 
 .contact form {
-    max-width: 40rem;
+    max-width: 70rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -459,25 +459,25 @@ span {
 .contact form .input-box .input-field {
     position: relative;
     width: 49%;
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
     transition: 0.5s ease;
 }
 
 .contact form .input-box .input-field:hover,
 .textarea-field:hover {
     box-shadow: 10px 10px 55px var(--main-color);
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea {
     width: 100%;
     height: 100%;
-    padding: 14px;
-    font-size: 15px;
+    padding: 1.5rem;
+    font-size: 1.6rem;
     color: var(--text-color);
     background: transparent;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: 0.2rem solid var(--main-color);
 }
 
@@ -493,7 +493,7 @@ span {
     width: 0;
     height: 100%;
     background: var(--bg-color);
-    border-radius: 10px;
+    border-radius: 1rem;
     z-index: -1;
     transition: 0.5s;
 }
@@ -515,7 +515,6 @@ span {
     position: relative;
     margin: 0.8rem 0 2.7rem;
     display: flex;
-    margin-bottom: 20px;
     z-index: 1;
     transition: 0.5s ease;
 }
@@ -613,14 +612,14 @@ footer {
 }
 
 /* Footer Right Section */
-/* .footer-center {
+.footer-center {
     flex: 1;
     min-width: 200px;
 }
 
 .footer-center h4 {
     font-size: 18px;
-    color: #E91E63;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -640,8 +639,8 @@ footer {
 }
 
 .footer-center ul li a:hover {
-    color: #E91E63;
-} */
+    color: var(--text-color);
+}
 
 .footer-icon a {
     position: relative;
@@ -693,8 +692,16 @@ footer {
     color: #aaa;
 }
 
+
+
+
+
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -704,7 +711,167 @@ footer {
     .footer-left,
     .footer-center,
     .footer-right {
-        margin-bottom: 20px;
+        flex: none;
+        width: 100%;
+    }
+
+    .footer-left h2,
+    .footer-center h4 {
+        text-align: center;
+    }
+
+    .footer-left p,
+    .footer-center p {
+        text-align: center;
+    }
+
+    .footer-center .social-icons {
+        justify-content: center;
     }
 }
-/* Footer */
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: var(--bg-color);
+    }
+
+    .menu i {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--main-color);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        z-index: 1;
+        transition: 0.25s ease;
+        transition-delay: 0.25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        z-index: -1;
+        transition: 0.25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        left: 0;
+        transition-delay: 0.25s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        transform: translateX(-20rem);
+        transition: 0.25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: 0.25s;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 200px;
+    }
+
+    .home-sci a {
+        width: 37px;
+        height: 37px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .work {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer-left h2 {
+        font-size: 20px;
+    }
+
+    .footer-left p,
+    .footer-center p {
+        font-size: 12px;
+    }
+
+    .footer-center .social-icons a {
+        font-size: 18px;
+    }
+
+    .footer-icon a {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 371px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+}

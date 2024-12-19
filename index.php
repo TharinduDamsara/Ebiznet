@@ -27,10 +27,12 @@
         </div>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
         </nav>
     </header>
     <!-- Header Design -->
@@ -165,7 +167,7 @@
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Subject" required>
                     <span class="focus"></span>
                 </div>
             </div>
