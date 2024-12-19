@@ -20,7 +20,7 @@
     --bg-color: #091b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
-    --main-color:  #4A90E2;
+    --main-color: #4A90E2;
 }
 
 html {
@@ -43,6 +43,12 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: 0.3s ease;
+}
+
+.header.sticky{
+    background: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -55,15 +61,16 @@ body {
 
 #vanane {
     font-size: 30px;
+    font-family: "Quicksand";
     color: var(--main-color);
     font-weight: 700;
 }
 
 #biznet {
     font-size: 30px;
+    font-family: "Quicksand";
     color: var(--text-color);
     font-weight: 700;
-    margin-left: -10px;
 }
 
 .navbar a {
@@ -98,13 +105,14 @@ section {
     padding: 10rem 9% 5rem;
     display: flex;
     align-items: center;
-    background: url(../images/banner/h1.png) no-repeat;
+    background: url(../images/banner/bghome.PNG) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home-content {
     max-width: 40rem;
+    z-index: 1;
 }
 
 .home-content h1 {
@@ -241,7 +249,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 55%;
     height: 100%;
     background: transparent;
     transition: 3s;

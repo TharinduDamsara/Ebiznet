@@ -17,10 +17,9 @@
 <body>
 
     <!-- Header Design -->
-    <div class="header">
+    <header class="header" id="header">
         <a href="#" class="logo">
-            <h1 id="vanane" class="d-inline-block align-text-top mt-2">Vanane</h1>
-            <h1 id="biznet" class="d-inline-block align-text-top mt-2">Biznet</h1>
+            <h1 id="vanane">Vanane<span id="biznet">Biznet</span></h1>
         </a>
 
         <div class="menu">
@@ -28,12 +27,12 @@
         </div>
 
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Work</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </div>
+    </header>
     <!-- Header Design -->
 
     <!-- Hero Section -->
