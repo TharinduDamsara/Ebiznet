@@ -40,14 +40,13 @@
     <!-- Hero Section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I'm Damsara</h1>
+            <h1>Part Time Solution</h1>
             <div class="text-animate">
-                <h3>Frontend Developer</h3>
+                <h3>Type And Translate</h3>
             </div>
-            <p>after submitting it a request will be sent the owner saying that you choose this work and you account will
-                show the time left till the choose time is over.
-                then after finishing the work you can log in and submit your work.
-                then you till receive your payment within two days.
+            <p>Discover flexible part-time opportunities in typing and translation.
+                Work on your schedule, earn from your skills, and connect with global clients.
+                Perfect for freelancers, students, or anyone seeking remote work from anywhere.
             </p>
 
             <div class="btn-box">
@@ -73,14 +72,12 @@
             <span class="circle-spin"></span>
         </div>
         <div class="about-content">
-            <h3>Frountend Developer!</h3>
+            <h3>How It Works !</h3>
             <p>
-                staring from typing and translation categories,
-                if one chooses typing they have two options Sinhala,
-                English. if Sinhala is chosen they will show Sinhala work and choosing English will show you English work.
-                Then you can choose any work available from the shown work cards.
-                after choosing the card and selecting it next you can fill the form with email and time duration of the work.
-                after submitting it a request will be sent the owner saying that you choose.
+                Our platform connects skilled individuals with part-time typing and translation opportunities,
+                empowering freelancers, students, and remote workers to earn flexibly while showcasing their expertise.
+                Prioritizing convenience and reliability, we provide a seamless experience for part-timers to collaborate efficiently,
+                fostering professional growth and enabling them to achieve their goals with ease...
             </p>
             <div class="btn-box btns">
                 <a href="#" class="btn">Read More</a>
@@ -102,8 +99,8 @@
                         <div class="content">
                             <div class="work-qty"><i class="bi bi-keyboard"></i> Remaining Tasks - 10</div>
                             <h3>Typing - Sinhala</h3>
-                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
-                                it mainly has two categories which are typing and translation.</p>
+                            <p>Typing Sinhala jobs involve using a Sinhala keyboard or software to type content.
+                                You can select tasks based on your preferred time duration and submit the completed work for payment.</p>
                         </div>
                     </div>
 
@@ -111,8 +108,8 @@
                         <div class="content">
                             <div class="work-qty"><i class="bi bi-keyboard"></i> Remaining Tasks - 10</div>
                             <h3>Typing - English</h3>
-                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
-                                it mainly has two categories which are typing and translation.</p>
+                            <p>Typing English jobs involve using a English keyboard or software to type content.
+                                You can select tasks based on your preferred time duration and submit the completed work for payment.</p>
                         </div>
                     </div>
                 </div>
@@ -126,8 +123,9 @@
                         <div class="content">
                             <div class="work-qty"><i class="bi bi-translate"></i> Remaining Tasks - 10</div>
                             <h3>Translate - Sinhala To English</h3>
-                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
-                                it mainly has two categories which are typing and translation.</p>
+                            <p>Sinhala to English translation involves converting Sinhala text into accurate English.
+                                Select tasks, set your time duration, and submit completed work.
+                                After submission, you’ll receive payment.</p>
                         </div>
                     </div>
 
@@ -135,8 +133,9 @@
                         <div class="content">
                             <div class="work-qty"><i class="bi bi-translate"></i> Remaining Tasks - 10</div>
                             <h3>Translate - English To Sinhala</h3>
-                            <p>We want to present a simple and clear explanation of a soon to be made webpage which can be used for people searching for a part time job.
-                                it mainly has two categories which are typing and translation.</p>
+                            <p>English to Sinhala translation involves converting English text into Sinhala.
+                                Choose tasks, set your time duration, and submit completed work.
+                                After submission, you’ll receive payment.</p>
                         </div>
                     </div>
                 </div>
