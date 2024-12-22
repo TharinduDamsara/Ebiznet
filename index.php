@@ -50,8 +50,8 @@
             </p>
 
             <div class="btn-box">
-                <a href="#" class="btn">Join Us</a>
-                <a href="#" class="btn">Login</a>
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Join Us</a>
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Login</a>
             </div>
         </div>
         <div class="home-sci">
@@ -224,7 +224,153 @@
     </footer>
     <!-- Footer -->
 
+    <!-- Join Us -->
+    <div class="signIn_Box">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
 
+                    <!-- joinUs -->
+                    <div class="form_container" id="sign_up">
+                        <i class="form-close btn-close form_close" data-bs-dismiss="modal" aria-label="Close" onclick="rsign_in();"></i>
+                        <div class="form login-form">
+                            <form action="#">
+                                <h2>Create an account</h2>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="inputBox">
+                                                <input type="text" placeholder="First Name" id="fname" />
+                                                <i class="bi bi-person email"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="inputBox">
+                                                <input type="text" placeholder="Last Name" id="lname" />
+                                                <i class="bi bi-person email"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="inputBox">
+                                                <input type="email" placeholder="Email" id="email" />
+                                                <i class="bi bi-envelope email"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="inputBox">
+                                                <input type="password" placeholder="Password" id="password" />
+                                                <i class="bi bi-person-lock password"></i>
+                                                <i class="bi bi-eye-slash eye" id="pwi1" onclick="showPassword1();"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="inputBox">
+                                                <input type="text" placeholder="Mobile" id="mobile" />
+                                                <i class="bi bi-phone email"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="inputBox">
+                                                <select class="form-select" id="gender">
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                    <i class="bi bi-envelope email"></i>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary signin-bt" onclick="signUp();">Join Us</button>
+                                    <div class="divider">
+                                        <span>OR login with social platforms</span>
+                                    </div>
+                                    <div class="social-i text-center">
+                                        <a href="#"><i class="bi bi-google"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-apple"></i></a>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- joinUs -->
+
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+    </div>
+    <!-- Join Us -->
+
+    <!-- Login -->
+    <div class="signIn_Box">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- SignIn Box -->
+                    <div class="form_container" id="sign_in">
+                        <i class="form-close btn-close form_close" data-bs-dismiss="modal" aria-label="Close"></i>
+                        <div class="form login-form ">
+                            <form action="#">
+                                <h2>Welcome back</h2>
+
+                                <?php
+
+                                $email = "";
+                                $password = "";
+
+                                if (isset($_COOKIE["email"])) {
+                                    $email = $_COOKIE["email"];
+                                }
+                                if (isset($_COOKIE["password"])) {
+                                    $password = $_COOKIE["password"];
+                                }
+
+                                ?>
+
+                                <div class="inputBox">
+                                    <input value="<?php echo $email; ?>" type="email" placeholder="Enter Your Email" id="email2" />
+                                    <i class="bi bi-envelope email"></i>
+                                </div>
+                                <div class="inputBox">
+                                    <input value="<?php echo $password; ?>" type="password" placeholder="Enter Your password" id="password2" />
+                                    <i class="bi bi-person-lock password"></i>
+                                    <i class="bi bi-eye-slash eye" id="pwi" onclick="showPassword();"></i>
+                                </div>
+                                <div class="option-field">
+                                    <span class="checkbox">
+                                        <input type="checkbox" class="form-check-input" id="check">
+                                        <label for="check">Remember Me</label>
+                                    </span>
+                                    <a href="#" class="Forgot-pw" onclick="forgotPassword();">Forgot Password?</a>
+                                </div>
+                                <button type="button" class="btn btn-primary signin-bt" onclick="signIn();">Login</button>
+                                <div class="divider">
+                                    <span>OR login with social platforms</span>
+                                </div>
+                                <div class="social-i text-center">
+                                    <a href="#"><i class="bi bi-google"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-apple"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- SignIn Box -->
+
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+    </div>
+    <!-- Login -->
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>
 
