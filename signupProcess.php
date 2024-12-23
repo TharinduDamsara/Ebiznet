@@ -62,7 +62,7 @@ if (empty($fname)) {
         Database::iud("INSERT INTO `user` 
             (`fname`, `lname`, `email`, `password`, `joined_date`, `mobile`, `user_status_status_id`, `gender_gender_id`) 
             VALUES 
-            ('" . $fname . "', '" . $lname . "', '" . $email . "', '" . $hashed_password . "', '" . $date . "', '" . $mobile . "', '1', '" . $gender . "')");
+            ('" . $fname . "', '" . $lname . "', '" . $email . "', '" . $password . "', '" . $date . "', '" . $mobile . "', '1', '" . $gender . "')");
 
         echo "success";
     }
