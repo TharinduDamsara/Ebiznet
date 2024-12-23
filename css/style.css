@@ -765,7 +765,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 101;
-    background: #ffffff;
+    background: var(--text-color);
     padding: 25px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3);
@@ -805,6 +805,7 @@ footer {
     outline: none;
     padding: 0 30px;
     color: #333;
+    background: var(--text-color);
     border-bottom: 1.5px solid #aaaaaa;
     transition: all 0.3s ease;
 }
@@ -857,6 +858,7 @@ footer {
 
 .form-select {
     font-size: 16px;
+    background-color: var(--text-color);
 }
 
 .checkbox {
