@@ -62,7 +62,7 @@ function signUp() {
     form.append("g", gender.value);
 
     var request = new XMLHttpRequest();
-    request.onreadystatechange = function(){
+    request.onreadystatechange = function () {
         if (request.status == 200 && request.readyState == 4) {
             var response = request.responseText;
             alert(response);
@@ -79,32 +79,32 @@ function signUp() {
 
 //log in
 
-function signIn(){
+function signIn() {
 
     var email = document.getElementById("email2");
     var password = document.getElementById("password2");
     var rememberMe = document.getElementById("check");
 
     var form = new FormData();
-    form.append("e",email.value);
-    form.append("p",password.value);
-    form.append("r",rememberMe.checked);
+    form.append("e", email.value);
+    form.append("p", password.value);
+    form.append("r", rememberMe.checked);
 
     var request = new XMLHttpRequest();
-    request.onreadystatechange = function(){
+    request.onreadystatechange = function () {
         if (request.status == 200 && request.readyState == 4) {
             var response = request.responseText;
             if (response == "success") {
-                alert ("Successfully Logged in");
+                alert("Successfully Logged in");
                 window.location = "index.php";
-            }else{
+            } else {
                 alert(response);
             }
         }
 
     }
 
-    request.open("POST","signInProcess.php",true);
+    request.open("POST", "signInProcess.php", true);
     request.send(form);
 
 }
@@ -114,7 +114,7 @@ function signIn(){
 function showPassword1() {
     var show = document.getElementById("password2");
     var showi = document.getElementById("pwi");
-    
+
 
     if (show.type == "password") {
         show.type = "text";
@@ -129,7 +129,7 @@ function showPassword1() {
 function showPassword() {
     var show = document.getElementById("password");
     var showi = document.getElementById("pwi1");
-    
+
 
     if (show.type == "password") {
         show.type = "text";

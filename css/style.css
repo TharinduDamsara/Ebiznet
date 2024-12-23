@@ -807,6 +807,7 @@ footer {
     color: #333;
     background: var(--text-color);
     border-bottom: 1.5px solid #aaaaaa;
+    border-radius: 6px;
     transition: all 0.3s ease;
 }
 

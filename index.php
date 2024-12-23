@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "connection.php";
 ?>
 <!DOCTYPE html>
@@ -277,21 +277,21 @@ include "connection.php";
                                             <div class="inputBox">
                                                 <select class="form-select" id="gender">
 
-                                                <?php
-                                                $rs = Database::search("SELECT * FROM `gender`");
-                                                $num = $rs->num_rows;
+                                                    <?php
+                                                    $rs = Database::search("SELECT * FROM `gender`");
+                                                    $num = $rs->num_rows;
 
-                                                for ($x=0; $x < $num; $x++) { 
-                                                    $data = $rs->fetch_assoc();
+                                                    for ($x = 0; $x < $num; $x++) {
+                                                        $data = $rs->fetch_assoc();
                                                     ?>
-                                                     <option value="<?php echo $data["gender_id"]; ?>">
-                                                        <?php echo $data["gender_name"]; ?>
-                                                    </option>
+                                                        <option value="<?php echo $data["gender_id"]; ?>">
+                                                            <?php echo $data["gender_name"]; ?>
+                                                        </option>
                                                     <?php
 
-                                                }
+                                                    }
 
-                                                ?>
+                                                    ?>
                                                     <!-- <i class="bi bi-envelope email"></i> -->
                                                 </select>
                                             </div>
@@ -354,7 +354,7 @@ include "connection.php";
                                 <div class="inputBox">
                                     <input value="<?php echo $password; ?>" type="password" placeholder="Enter Your password" id="password2" />
                                     <i class="bi bi-person-lock password"></i>
-                                    <i class="bi bi-eye-slash eye"  id="pwi" onclick="showPassword1();"></i>
+                                    <i class="bi bi-eye-slash eye" id="pwi" onclick="showPassword1();"></i>
                                 </div>
                                 <div class="option-field">
                                     <span class="checkbox">

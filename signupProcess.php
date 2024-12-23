@@ -12,29 +12,33 @@ $gender = $_POST["g"];
 
 
 if (empty($fname)) {
-    echo "Please Enter Your First Name.";
-} else if (strlen($fname) > 50) {
-    echo "First Name must contain LESS THAN 50 Characters.";
-} else if (empty($lname)) {
-    echo "Please Enter Your Last Name.";
-} else if (strlen($lname) > 50) {
-    echo "Last Name must contain LESS THAN 50 Characters.";
-} else if (empty($email)) {
-    echo "Please Enter Your Email Address.";
-} else if (strlen($email) > 100) {
-    echo "Email must contain LESS THAN 100 Characters.";
-} else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "Invalid Email Address.";
-} else if (empty($password)) {
-    echo "Please Enter Your Password.";
-} else if (strlen($password) < 5 || strlen($password) > 20) {
-    echo "Password Must contain between 5 to 20 characters.";
-} else if (empty($mobile)) {
-    echo "Please Enter Your Mobile Number.";
-} else if (strlen($mobile) != 10) {
-    echo "Mobile Number Must contain exactly 10 characters.";
-} else if (!preg_match("/07[0-9]{8}/", $mobile)) {
-    echo "Invalid Mobile Number.";
+    echo ("Please Enter Your First Name.");
+} elseif (strlen($fname) > 50) {
+    echo ("First Name Must Contain LOWER THAN 50 Characters.");
+} elseif (empty($lname)) {
+    echo ("Please Enter Your Last Name.");
+} elseif (strlen($lname) > 50) {
+    echo ("Last Name Must Contain LOWER THAN 50 Characters.");
+} elseif (empty($email)) {
+    echo ("Please Enter Your Email Address.");
+} elseif (strlen($email) > 100) {
+    echo ("Email Must Contain LOWER THAN 100 Characters.");
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo ("Invalid Email Address.");
+} elseif (empty($password)) {
+    echo ("Please Enter Your Password.");
+} elseif (strlen($password) < 8) {
+    echo ("Password must be at least 8 characters long.");
+} elseif (!preg_match('/[0-9]/', $password)) {
+    echo ("Password must contain at least one number.");
+} elseif (!preg_match('/[a-z,A-Z]/', $password)) {
+    echo ("Password must include at least one letter.");
+} elseif (empty($mobile)) {
+    echo ("Please Enter Your Mobile Number.");
+} elseif (strlen($mobile) != 10) {
+    echo ("Mobile Number Must Contain 10 Characters.");
+} elseif (!preg_match("/07[0,1,2,4.5,6,7,8]{1}[0-9]{7}/", $mobile)) {
+    echo ("Invalid Mobile Number.");
 } else {
 
 
@@ -45,16 +49,16 @@ if (empty($fname)) {
         echo "User With The Same Email Address or Mobile Number already exists.";
     } else {
 
-     
+
         $d = new DateTime();
         $tz = new DateTimeZone("Asia/Colombo");
         $d->setTimezone($tz);
         $date = $d->format("Y-m-d H:i:s");
 
-      
+
         // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-   
+
         Database::iud("INSERT INTO `user` 
             (`fname`, `lname`, `email`, `password`, `joined_date`, `mobile`, `user_status_status_id`, `gender_gender_id`) 
             VALUES 
@@ -63,4 +67,3 @@ if (empty($fname)) {
         echo "success";
     }
 }
-?>
