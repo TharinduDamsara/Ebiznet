@@ -361,7 +361,7 @@ include "connection.php";
                                         <input type="checkbox" class="form-check-input" id="check">
                                         <label for="check">Remember Me</label>
                                     </span>
-                                    <a href="#" class="Forgot-pw" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="forgotPassword();">Forgot Password?</a>
+                                    <a href="#" class="Forgot-pw" data-bs-toggle="modal" data-bs-target="#exampleModal" id="reset" onclick="forgotPassword();">Forgot Password?</a>
                                 </div>
                                 <button type="button" class="btn btn-primary signin-bt" onclick="signIn();">Login</button>
                                 <div class="divider">
@@ -388,19 +388,19 @@ include "connection.php";
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" id="modal-content">
-                <i class="btn-close form_close" data-bs-dismiss="modal" aria-label="Close"></i>
+                <i class="btn-close form_close" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal();"></i>
                 <div class="modal-body">
                     <h1>Enter Verification Code</h1>
                     <p>Please input the 6-digit code sent to your email.</p>
                     <div class="code-inputs">
-                        <input type="text" maxlength="1" required>
-                        <input type="text" maxlength="1" required>
-                        <input type="text" maxlength="1" required>
-                        <input type="text" maxlength="1" required>
-                        <input type="text" maxlength="1" required>
-                        <input type="text" maxlength="1" required>
+                        <input type="text" maxlength="1" required id="1">
+                        <input type="text" maxlength="1" required id="2">
+                        <input type="text" maxlength="1" required id="3">
+                        <input type="text" maxlength="1" required id="4">
+                        <input type="text" maxlength="1" required id="5">
+                        <input type="text" maxlength="1" required id="6">
                     </div>
-                    <button class="btn-modern">Verify</button>
+                    <button class="btn-modern" onclick="verify();">Verify</button>
                     <p class="resend">Didn't get the code? <a href="#">Resend</a></p>
                 </div>
             </div>
@@ -411,13 +411,13 @@ include "connection.php";
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" id="modal-content">
-                <i class="btn-close form_close" data-bs-dismiss="modal" aria-label="Close"></i>
+                <i class="form-close btn-close form_close" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal();"></i>
                 <div class="modal-body">
                     <h1>Reset Password</h1>
                     <p>Enter your new password below.</p>
-                    <input class="r-input" type="password" placeholder="New Password" required>
-                    <input class="r-input" type="password" placeholder="Confirm Password" required>
-                    <button class="btn-modern m-2">Reset Password</button>
+                    <input class="r-input" type="password" placeholder="New Password" required id="newp">
+                    <input class="r-input" type="password" placeholder="Confirm Password" required id="retp">
+                    <button class="btn-modern m-2" onclick="resetModal1();">Reset Password</button>
                 </div>
             </div>
         </div>
