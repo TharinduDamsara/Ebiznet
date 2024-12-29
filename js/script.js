@@ -275,3 +275,29 @@ function verify() {
     request.send(form);
 
 }
+
+//auto input next
+
+document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll(".code-input");
+
+    // Focus the next input when a digit is entered
+    inputs.forEach((input, index) => {
+        input.addEventListener("input", function () {
+            if (input.value.length === 1 && index < inputs.length - 1) {
+                inputs[index + 1].focus();
+            }
+        });
+
+        // Optional: Automatically focus the previous input when backspace is pressed
+        input.addEventListener("keydown", function (e) {
+            if (e.key === "Backspace" && input.value === "") {
+                if (index > 0) {
+                    inputs[index - 1].focus();
+                }
+            }
+        });
+    });
+});
+
+
