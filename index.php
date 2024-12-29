@@ -393,15 +393,15 @@ include "connection.php";
                     <h1>Enter Verification Code</h1>
                     <p>Please input the 6-digit code sent to your email.</p>
                     <div class="code-inputs">
-                        <input type="text" maxlength="1" required id="1">
-                        <input type="text" maxlength="1" required id="2">
-                        <input type="text" maxlength="1" required id="3">
-                        <input type="text" maxlength="1" required id="4">
-                        <input type="text" maxlength="1" required id="5">
-                        <input type="text" maxlength="1" required id="6">
+                        <input type="text" maxlength="1" required id="1" class="code-input">
+                        <input type="text" maxlength="1" required id="2" class="code-input">
+                        <input type="text" maxlength="1" required id="3" class="code-input">
+                        <input type="text" maxlength="1" required id="4" class="code-input">
+                        <input type="text" maxlength="1" required id="5" class="code-input">
+                        <input type="text" maxlength="1" required id="6" class="code-input">
                     </div>
                     <button class="btn-modern" onclick="verify();">Verify</button>
-                    <p class="resend">Didn't get the code? <a href="#">Resend</a></p>
+                    <p class="resend">Didn't get the code? <a onclick="forgotPassword();" href="#">Resend</a></p>
                 </div>
             </div>
         </div>
