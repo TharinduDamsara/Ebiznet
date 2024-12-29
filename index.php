@@ -361,7 +361,7 @@ include "connection.php";
                                         <input type="checkbox" class="form-check-input" id="check">
                                         <label for="check">Remember Me</label>
                                     </span>
-                                    <a href="#" class="Forgot-pw" data-bs-toggle="modal" data-bs-target="#exampleModal" id="reset" onclick="forgotPassword();">Forgot Password?</a>
+                                    <a href="#" class="Forgot-pw" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="reset" onclick="forgotPassword();">Forgot Password?</a>
                                 </div>
                                 <button type="button" class="btn btn-primary signin-bt" onclick="signIn();">Login</button>
                                 <div class="divider">
@@ -385,7 +385,7 @@ include "connection.php";
     <!-- Login -->
 
     <!--Verification Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" id="modal-content">
                 <i class="btn-close form_close" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal();"></i>
@@ -408,7 +408,7 @@ include "connection.php";
     </div>
 
     <!-- Reset Modal -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" id="modal-content">
                 <i class="form-close btn-close form_close" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal();"></i>

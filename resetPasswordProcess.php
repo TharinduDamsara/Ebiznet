@@ -8,13 +8,21 @@ $retypepw = $_POST["r"];
 $vcode = $_POST["v"];
 
 if (!isset($newPw)) {
-    echo ("Please enter your new password.");
-} else if (strlen($newPw) < 5 || strlen($newPw) > 20) {
-    echo ("New Password must contain BETWEEN 5 to 20 Characters.");
-} else if (!isset($retypepw)) {
-    echo ("Please Retype your new password.");
-} else if (strlen($retypepw) < 5 || strlen($retypepw) > 20) {
-    echo ("New Password must contain BETWEEN 5 to 20 Characters.");
+    echo ("Please Enter Your New Password.");
+} else if (strlen($newPw) < 8) {
+    echo ("Password must be at least 8 characters long.");
+} elseif (!preg_match('/[0-9]/', $newPw)) {
+    echo ("Password must contain at least one number.");
+} elseif (!preg_match('/[a-z,A-Z]/', $newPw)) {
+    echo ("Password must include at least one letter.");
+} else if (empty($retypepw)) {
+    echo ("Please Retype your New Password.");
+} else if (strlen($retypepw) < 8) {
+    echo ("Retype Password must be at least 8 characters long.");
+} elseif (!preg_match('/[0-9]/', $retypepw)) {
+    echo ("Password must contain at least one number.");
+} elseif (!preg_match('/[a-z,A-Z]/', $retypepw)) {
+    echo ("Password must include at least one letter.");
 } else if ($newPw != $retypepw) {
     echo ("The passwords do not match.");
 } else {

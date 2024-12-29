@@ -68,7 +68,7 @@ function signUp() {
             if (response == "success") {
                 alert("Joined us successfully");
                 window.location.reload();
-            }else{
+            } else {
                 alert(response);
             }
 
@@ -235,8 +235,8 @@ function getCode() {
 
 function verify() {
 
-    var verificationModal = document.getElementById("exampleModal");
-    var resetModal = new bootstrap.Modal(document.getElementById("exampleModal2"));
+    var verificationModal = document.getElementById("staticBackdrop");
+    var resetModal = new bootstrap.Modal(document.getElementById("staticBackdrop3"));
     var email = document.getElementById("email2");
     var verificationcode = getCode();
 
