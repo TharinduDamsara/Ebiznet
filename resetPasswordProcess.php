@@ -17,12 +17,6 @@ if (!isset($newPw)) {
     echo ("Password must include at least one letter.");
 } else if (empty($retypepw)) {
     echo ("Please Retype your New Password.");
-} else if (strlen($retypepw) < 8) {
-    echo ("Retype Password must be at least 8 characters long.");
-} elseif (!preg_match('/[0-9]/', $retypepw)) {
-    echo ("Password must contain at least one number.");
-} elseif (!preg_match('/[a-z,A-Z]/', $retypepw)) {
-    echo ("Password must include at least one letter.");
 } else if ($newPw != $retypepw) {
     echo ("The passwords do not match.");
 } else {
