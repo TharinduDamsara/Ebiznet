@@ -108,6 +108,24 @@ section {
     background: url(../images/banner/bghome.PNG) no-repeat;
     background-size: cover;
     background-position: center;
+    transition: 2s;
+    animation-name: animate;
+    animation-duration: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate{
+    50%{
+        background-image: url(../images/banner/bghome1.PNG);
+    }
+
+    100%{
+        background-image: url(../images/banner/bghome.PNG);
+    }
 }
 
 .home-content {
